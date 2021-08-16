@@ -1,0 +1,131 @@
+/* 
+  THINGS TO GOOGLE
+  CSS Selector Specificity
+  Collapsing margins
+  BEM css writing standards
+*/
+
+/*h1 {
+	font-size: ;
+}
+
+.yellow {
+	color: yellow;
+	background: pink;
+}
+
+.pink {
+	color: pink;
+	background: yellow;
+}
+
+#blue {
+	color: blue;
+}
+
+All elements that are children (not necessarily immediate) of ol with class pink
+ol .pink {
+	font-size: 25px;
+}
+
+All elements that are immediate children of ol with class pink
+ol > .pink {
+	font-size: 25px;
+}
+
+All buttons that are children (not necessarily immediate) of class pink that are children (not necessarily immediate) of ol 
+ol .pink button{
+	font-size: 25px;
+}
+*/
+
+/*
+	PROPERTIES
+	background-color/ background
+	text-align
+	color
+	display
+	position
+	width
+	height
+	top/ right/ bottom/ left
+	*box-model*
+	margin
+	padding
+	border
+	box-shadow
+	animation
+	transition
+	transform
+
+	PSEUDO-CLASS
+	PSEUDO-ELEMENTS
+
+	VALUES auto
+	UNITS- px, %, vh, vw, em, rem
+*/
+
+
+
+body {
+	font-family: 'Space Mono', monospace;
+}
+
+h1 {
+	color: rgb(160, 130, 220);
+	background: rgb(240, 240, 255);
+	width: 200px;
+}
+
+/* By default, button does not inherit the font-family of its parent */
+button {
+	font-family: inherit;
+}
+
+#foo {
+	background: rgb(200, 180, 50);
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	margin-top: 50px;
+	position: relative;
+	transition: 2s width, 2s height, 2s background, 2s transform;
+	/*animation: 2s spin linear infinite, 2s move linear infinite alternate;*/
+}
+
+#foo:hover {
+	border: 1px solid dimgray;
+	background: rgb(120, 100, 180);
+	width: 50px;
+	height: 50px;
+	transform: translate(250px);
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes move {
+	0% {
+		left: 0px;
+	}
+
+	100% {
+		left: 250px;
+	}
+}
+
+
+
+
+
